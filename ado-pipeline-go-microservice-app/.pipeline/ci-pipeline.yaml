@@ -63,7 +63,7 @@ stages:
       steps:
       - template: ./templates/create-kind-cluster.yaml
         parameters:
-          cluster_name: myAKS
+          cluster_name: my-cluster
       - bash: kubectl get pods -A
         displayName: Get pods
       - bash: |
